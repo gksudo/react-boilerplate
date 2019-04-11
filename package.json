@@ -1,0 +1,45 @@
+{
+  "name": "react-boilerplate",
+  "version": "1.0.0",
+  "description": "boiletplate for projects",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gksudo/react-boilerplate"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --config ./webpack.config.js --mode development",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage --colors"
+  },
+  "keywords": [],
+  "author": "bryce williams",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.4.0",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^24.7.1",
+    "babel-loader": "^8.0.5",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.12.1",
+    "jest": "^24.7.1",
+    "jsdom": "^14.0.0",
+    "react-hot-loader": "^4.8.3",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.3.1"
+  },
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>/test/enzyme.config.js"
+    ]
+  }
+}
